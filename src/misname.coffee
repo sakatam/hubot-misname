@@ -12,7 +12,7 @@
 
 
 module.exports = (robot) ->
-  NAME = "hubot"
+  NAME = robot.name
   matchers = []
   for c, i in NAME
     matchers.push "#{NAME.substring(0, i)}[^#{c}]#{NAME.substring(i+1)}"
