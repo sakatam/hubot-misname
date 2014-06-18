@@ -1,6 +1,6 @@
 {
   "name": "hubot-misname",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "hubot knows humans tend to mistype his name",
   "main": "index.coffee",
   "scripts": {
