@@ -1,0 +1,26 @@
+{
+  "name": "hubot-misname",
+  "version": "0.0.0",
+  "description": "hubot knows humans tend to mistype his name",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sakatam/hubot-misname.git"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "author": "sakatam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sakatam/hubot-misname/issues"
+  },
+  "homepage": "https://github.com/sakatam/hubot-misname",
+  "dependencies": {
+    "coffee-script": "^1.7.1"
+  }
+}
