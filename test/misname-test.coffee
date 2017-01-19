@@ -37,5 +37,5 @@ describe 'misname', ->
 
   describe 'responds to changed letters', ->
     for c, i in NAME
-      badName = NAME.substring(0, i) + chance.character() + NAME.substring(i + 1)
+      badName = NAME.substring(0, i) + chance.character({pool: 'acdefgijklmnpqrsvwxyz'}) + NAME.substring(i + 1)
       assertResponse(badName)

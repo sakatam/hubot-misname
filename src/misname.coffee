@@ -16,4 +16,4 @@ module.exports = (robot) ->
   regex = ///^(#{matchers.join "|"})\b///i
 
   robot.hear regex, (msg) ->
-    msg.reply "you want me, sir? but my name is \"hubot\" not \"#{msg.match[1]}\"."
+    msg.reply "You want me, sir? but my name is \"hubot\" not \"#{msg.match[1]}\"."
