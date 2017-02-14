@@ -1,11 +1,8 @@
 # Description:
-#   assigns random reviewer for a pull request
+#   tells people when Hubot's name is misspelled
 #
 # Configuration:
 #   N/A
-#
-# Commands:
-#   this script just detects misspellings of "hubot"
 #
 # Author:
 #   sakatam
@@ -15,8 +12,8 @@ module.exports = (robot) ->
   NAME = robot.name
   matchers = []
   for c, i in NAME
-    matchers.push "#{NAME.substring(0, i)}[^#{c}]#{NAME.substring(i+1)}"
+    matchers.push "#{NAME.substring(0, i)}[^#{c}]?#{NAME.substring(i+1)}"
   regex = ///^(#{matchers.join "|"})\b///i
 
   robot.hear regex, (msg) ->
-    msg.reply "you want me, sir? but my name is \"hubot\" not \"#{msg.match[1]}\"."
+    msg.reply "You want me, sir? but my name is \"hubot\" not \"#{msg.match[1]}\"."
